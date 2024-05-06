@@ -1,4 +1,6 @@
-mkdir xcode
+set -e
+
+mkdir -f xcode
 # iOS
 xcodebuild -sdk iphoneos -arch arm64 -project graal-svm-ios.xcodeproj -scheme graal-svm-arm64-debug > xcode/graal-svm-arm64-debug.log
 xcodebuild -sdk iphoneos -arch arm64 -project graal-svm-ios.xcodeproj -scheme graal-svm-arm64-release > xcode/graal-svm-arm64-release.log
